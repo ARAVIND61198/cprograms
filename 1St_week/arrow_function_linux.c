@@ -80,9 +80,9 @@ int main(){
 	choice = interupt();
 	}while(choice!=3);
 	if(size!=0)
-		printf("\n you have selected the word : %s ",list[pos]);
+		printf("\n you have selected the word : %s\n",list[pos]);
 	else
-		printf("\nSorry no word to suggest ,the letters u typed is :%s",word);
+		printf("\nSorry no word to suggest ,the letters u typed is :%s\n",word);
 	free(word);
 	return 0;
 }
