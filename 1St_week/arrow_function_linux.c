@@ -94,14 +94,15 @@ int interupt(){
 	extern char getch(void);
 	int chr1, chr2;
 	chr1 = getch();
-	if (chr1 == 0xE0) //to check scroll key interrupt
+	if (chr1 == 27) //to check scroll key interrupt
 	{
-	chr2 = getch();  //to read arrow key
+	chr2 = getch();
+	chr2 = getch();//to read arrow key
   	switch(chr2)
 	{
-   		case 75: 
+   		case 68: 
 			return 1;	//If left arrow is pressed 1 will be returned. 
-   		case 77: 
+   		case 67: 
 					//If right arrow is pressed then 2 will be returned.
    			return 2;
    		default:
