@@ -94,9 +94,9 @@ int main(){
 int interupt(){
 	int chr1, chr2;
 	chr1 = getch();
-	ignore_function(); //In linux arrow will push 3 values in buffer the second is always same to avoid it.
 	if (chr1 == interuptor) //to check scroll key interrupt
 	{
+	ignore_function(); //In linux arrow will push 3 values in buffer the second is always same to avoid it.
 	chr2 = getch();  //to read arrow key
   	switch(chr2)
 	{
